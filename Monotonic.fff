@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<profile name="H-Series 60A 0.4 Nozzle Profile" version="2020-07-13 09:10:23" app="S3D-Software 4.1.2">
+<profile name="H-Series 60A 0.8 Nozzle Profile" version="2020-07-13 09:10:41" app="S3D-Software 4.1.2">
   <baseProfile>Default (modified)</baseProfile>
   <printMaterial>Ninjaflex</printMaterial>
   <printQuality>X60</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
     <toolheadNumber>3</toolheadNumber>
-    <diameter>0.4</diameter>
+    <diameter>0.8</diameter>
     <autoWidth>0</autoWidth>
-    <width>0.42</width>
-    <extrusionMultiplier>1.15</extrusionMultiplier>
+    <width>0.82</width>
+    <extrusionMultiplier>1.12</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>6</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -21,7 +21,7 @@
     <wipeDistance>0.2</wipeDistance>
   </extruder>
   <primaryExtruder>0</primaryExtruder>
-  <layerHeight>0.2</layerHeight>
+  <layerHeight>0.4</layerHeight>
   <topSolidLayers>6</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>2</perimeterOutlines>
@@ -62,7 +62,7 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>70</infillPercentage>
+  <infillPercentage>60</infillPercentage>
   <outlineOverlapPercentage>60</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>101</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
@@ -169,7 +169,7 @@
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing>{REPLACE &quot;; feature outer perimeter\n&quot; &quot;; feature outer perimeter\nM204 P200\nM205 X1 Y1\n&quot;},{REPLACE &quot;; feature inner perimeter\n&quot; &quot;; feature inner perimeter\nM204 P1000\nM205 X10 Y10\n&quot;},{REPLACE &quot;; feature solid layer\n&quot; &quot;; feature solid layer\nM204 P1000\nM205 X10 Y10\n&quot;},{REPLACE &quot;; feature infill\n&quot; &quot;; feature infill\nM204 P1000\nM205 X10 Y10\n&quot;},,&quot;C:\Program Files (x86)\Diabase Engineering LLC\PostProcess.exe&quot; &quot;[output_filepath]&quot;</postProcessing>
-  <defaultSpeed>1800</defaultSpeed>
+  <defaultSpeed>1500</defaultSpeed>
   <outlineUnderspeed>0.85</outlineUnderspeed>
   <solidInfillUnderspeed>0.85</solidInfillUnderspeed>
   <supportUnderspeed>1</supportUnderspeed>
@@ -350,11 +350,11 @@
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="X60">
-    <layerHeight>0.2</layerHeight>
+    <layerHeight>0.4</layerHeight>
     <topSolidLayers>6</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>70</infillPercentage>
+    <infillPercentage>60</infillPercentage>
     <supportInfillPercentage>60</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureMaterial name="Cheetah-TPU">
