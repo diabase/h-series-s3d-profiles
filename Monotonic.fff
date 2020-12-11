@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<profile name="H-Series 98A 0.8 Nozzle Profile" version="2020-07-10 10:55:15" app="S3D-Software 4.1.2">
+<profile name="H-Series 75D0.8 Nozzle Profile" version="2020-07-10 10:55:31" app="S3D-Software 4.1.2">
   <baseProfile>Default (modified)</baseProfile>
-  <printMaterial>PLA</printMaterial>
+  <printMaterial>Cheetah-TPU</printMaterial>
   <printQuality>X60</printQuality>
   <printExtruders></printExtruders>
   <extruder name="Primary Extruder">
-    <toolheadNumber>4</toolheadNumber>
+    <toolheadNumber>5</toolheadNumber>
     <diameter>0.8</diameter>
     <autoWidth>0</autoWidth>
     <width>0.8</width>
-    <extrusionMultiplier>0.95</extrusionMultiplier>
+    <extrusionMultiplier>0.92</extrusionMultiplier>
     <useRetract>1</useRetract>
-    <retractionDistance>4.7</retractionDistance>
+    <retractionDistance>2</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
     <retractionSpeed>2400</retractionSpeed>
@@ -24,7 +24,7 @@
   <layerHeight>0.4</layerHeight>
   <topSolidLayers>4</topSolidLayers>
   <bottomSolidLayers>2</bottomSolidLayers>
-  <perimeterOutlines>2</perimeterOutlines>
+  <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>3</startPointOption>
   <startPointOriginX>-90</startPointOriginX>
@@ -33,7 +33,7 @@
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>120</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.95</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.9</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>1</raftTopLayers>
@@ -62,8 +62,8 @@
   <infillExtruder>0</infillExtruder>
   <internalInfillPattern>Rectilinear</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>60</infillPercentage>
-  <outlineOverlapPercentage>40</outlineOverlapPercentage>
+  <infillPercentage>40</infillPercentage>
+  <outlineOverlapPercentage>20</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>100</infillExtrusionWidthPercentage>
   <minInfillLength>1</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
@@ -72,49 +72,49 @@
   <externalInfillAngles>45,-45</externalInfillAngles>
   <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
-  <supportInfillPercentage>30</supportInfillPercentage>
-  <supportExtraInflation>1</supportExtraInflation>
+  <supportInfillPercentage>40</supportInfillPercentage>
+  <supportExtraInflation>1.5</supportExtraInflation>
   <supportBaseLayers>0</supportBaseLayers>
   <denseSupportExtruder>0</denseSupportExtruder>
   <denseSupportLayers>0</denseSupportLayers>
   <denseSupportInfillPercentage>100</denseSupportInfillPercentage>
   <supportLayerInterval>1</supportLayerInterval>
-  <supportHorizontalPartOffset>0.6</supportHorizontalPartOffset>
+  <supportHorizontalPartOffset>1</supportHorizontalPartOffset>
   <supportUpperSeparationLayers>1</supportUpperSeparationLayers>
   <supportLowerSeparationLayers>0</supportLowerSeparationLayers>
-  <supportType>0</supportType>
+  <supportType>1</supportType>
   <supportGridSpacing>3</supportGridSpacing>
-  <maxOverhangAngle>40</maxOverhangAngle>
-  <supportAngles>90</supportAngles>
+  <maxOverhangAngle>60</maxOverhangAngle>
+  <supportAngles>0</supportAngles>
   <temperatureController name="T1">
     <temperatureNumber>1</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="235"/>
+    <setpoint layer="1" temperature="240"/>
   </temperatureController>
   <temperatureController name="T2">
     <temperatureNumber>2</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="235"/>
+    <setpoint layer="1" temperature="240"/>
   </temperatureController>
   <temperatureController name="T3">
     <temperatureNumber>3</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="235"/>
+    <setpoint layer="1" temperature="240"/>
   </temperatureController>
   <temperatureController name="T4">
     <temperatureNumber>4</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="235"/>
+    <setpoint layer="1" temperature="240"/>
   </temperatureController>
   <temperatureController name="T5">
     <temperatureNumber>5</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
     <stabilizeAtStartup>0</stabilizeAtStartup>
-    <setpoint layer="1" temperature="235"/>
+    <setpoint layer="1" temperature="240"/>
   </temperatureController>
   <fanSpeed>
     <setpoint layer="1" speed="0"/>
@@ -169,7 +169,7 @@
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing>{REPLACE &quot;; feature outer perimeter\n&quot; &quot;; feature outer perimeter\nM204 P200\nM205 X1 Y1\n&quot;},{REPLACE &quot;; feature inner perimeter\n&quot; &quot;; feature inner perimeter\nM204 P1000\nM205 X10 Y10\n&quot;},{REPLACE &quot;; feature solid layer\n&quot; &quot;; feature solid layer\nM204 P1000\nM205 X10 Y10\n&quot;},{REPLACE &quot;; feature infill\n&quot; &quot;; feature infill\nM204 P1000\nM205 X10 Y10\n&quot;},,&quot;C:\Program Files (x86)\Diabase Engineering LLC\PostProcess.exe&quot; &quot;[output_filepath]&quot;</postProcessing>
-  <defaultSpeed>2700</defaultSpeed>
+  <defaultSpeed>2400</defaultSpeed>
   <outlineUnderspeed>0.85</outlineUnderspeed>
   <solidInfillUnderspeed>0.85</solidInfillUnderspeed>
   <supportUnderspeed>1</supportUnderspeed>
@@ -177,11 +177,11 @@
   <rapidZspeed>3000</rapidZspeed>
   <minBridgingArea>5</minBridgingArea>
   <bridgingExtraInflation>2</bridgingExtraInflation>
-  <bridgingExtrusionMultiplier>1.1</bridgingExtrusionMultiplier>
-  <bridgingSpeedMultiplier>0.2</bridgingSpeedMultiplier>
+  <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
+  <bridgingSpeedMultiplier>0.3</bridgingSpeedMultiplier>
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
-  <applyBridgingToPerimeters>1</applyBridgingToPerimeters>
+  <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
   <filamentDiameters>1.75|1.75|1.75|1.75|1.75|1.75</filamentDiameters>
   <filamentPricesPerKg>46|46|46|46|46|46</filamentPricesPerKg>
   <filamentDensities>1.25|1.25|1.25|1.25|1.25|1.25</filamentDensities>
@@ -217,13 +217,13 @@
       <temperatureNumber>1</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <stabilizeAtStartup>0</stabilizeAtStartup>
-      <setpoint layer="1" temperature="235"/>
+      <setpoint layer="1" temperature="218"/>
     </temperatureController>
     <temperatureController name="T2">
       <temperatureNumber>2</temperatureNumber>
       <isHeatedBed>0</isHeatedBed>
       <stabilizeAtStartup>0</stabilizeAtStartup>
-      <setpoint layer="1" temperature="235"/>
+      <setpoint layer="1" temperature="225"/>
     </temperatureController>
     <temperatureController name="T3">
       <temperatureNumber>3</temperatureNumber>
@@ -232,6 +232,22 @@
       <setpoint layer="1" temperature="235"/>
     </temperatureController>
     <globalBedTemperature>60</globalBedTemperature>
+    <extruder name="T2">
+      <toolheadNumber>2</toolheadNumber>
+      <diameter>0.4</diameter>
+      <autoWidth>0</autoWidth>
+      <width>0.42</width>
+      <extrusionMultiplier>1.1</extrusionMultiplier>
+      <useRetract>1</useRetract>
+      <retractionDistance>6</retractionDistance>
+      <extraRestartDistance>0</extraRestartDistance>
+      <retractionZLift>1</retractionZLift>
+      <retractionSpeed>6000</retractionSpeed>
+      <useCoasting>0</useCoasting>
+      <coastingDistance>5</coastingDistance>
+      <useWipe>0</useWipe>
+      <wipeDistance>5</wipeDistance>
+    </extruder>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
@@ -338,7 +354,32 @@
     <topSolidLayers>4</topSolidLayers>
     <bottomSolidLayers>2</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>60</infillPercentage>
-    <supportInfillPercentage>30</supportInfillPercentage>
+    <infillPercentage>40</infillPercentage>
+    <supportInfillPercentage>40</supportInfillPercentage>
   </autoConfigureQuality>
+  <autoConfigureMaterial name="Cheetah-TPU">
+    <temperatureController name="T1">
+      <temperatureNumber>1</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="240"/>
+    </temperatureController>
+    <temperatureController name="T2">
+      <temperatureNumber>2</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="240"/>
+    </temperatureController>
+    <temperatureController name="T3">
+      <temperatureNumber>3</temperatureNumber>
+      <isHeatedBed>0</isHeatedBed>
+      <stabilizeAtStartup>0</stabilizeAtStartup>
+      <setpoint layer="1" temperature="240"/>
+    </temperatureController>
+    <globalBedTemperature>60</globalBedTemperature>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="100"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
 </profile>
