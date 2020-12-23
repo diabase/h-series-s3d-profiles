@@ -85,7 +85,7 @@
   <supportAngles>0</supportAngles>
   <temperatureController name="T0">
     <temperatureNumber>0</temperatureNumber>
-    <isHeatedBed>0</isHeatedBed>
+    <isHeatedBed>1</isHeatedBed>
     <stabilizeAtStartup>0</stabilizeAtStartup>
     <setpoint layer="1" temperature="60"/>
   </temperatureController>
