@@ -83,6 +83,12 @@
   <supportGridSpacing>1</supportGridSpacing>
   <maxOverhangAngle>60</maxOverhangAngle>
   <supportAngles>0</supportAngles>
+  <temperatureController name="T0">
+    <temperatureNumber>0</temperatureNumber>
+    <isHeatedBed>1</isHeatedBed>
+    <stabilizeAtStartup>0</stabilizeAtStartup>
+    <setpoint layer="1" temperature="0"/>
+  </temperatureController>
   <temperatureController name="T1">
     <temperatureNumber>1</temperatureNumber>
     <isHeatedBed>1</isHeatedBed>
